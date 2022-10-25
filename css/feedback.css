@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  font-size: 0;
+}
+.title {
+  position: absolute;
+  width: 853px;
+  height: 220px;
+  left: 1%;
+  top: 1%;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 183.113px;
+  line-height: 220px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.add-content {
+  position: absolute;
+  width: 203px;
+  height: 140px;
+  right: 1%;
+  bottom: 0;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 116.688px;
+  line-height: 140px;
+  /* identical to box height */
+
+  text-decoration: underline solid white 4px;
+  --font-size: 20px;
+
+  color: #ffffff;
+}
+.cancel-content {
+  position: absolute;
+  width: 52px;
+  height: 148px;
+  right: 1%;
+  top: 0;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 116.688px;
+  line-height: 140px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.textGrid {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+}
+
+.textareaMain {
+  position: absolute;
+  left: 1%;
+  bottom: 5%;
+  background-color: black;
+}
+
+.placeholder {
+  font-family: "PP Neue Montreal";
+  color: rgb(182, 182, 182);
+  font-size: 50px;
+  font-weight: 500;
+  width: 310px;
+}
+
+.placeholder-p {
+  font-family: "PP Neue Montreal";
+
+  font-size: 30px;
+  border-bottom: solid 2px;
+  font-weight: 500;
+  padding: 25px 0px 10px 0px;
+  width: 315px;
+  color: rgb(182, 182, 182);
+}
+
+.textarea-h {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  border-bottom: solid 1px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  width: 320px;
+  left: 10%;
+  top: 270px;
+  padding: 20px 0px 10px 0px;
+  background: transparent;
+  color: white;
+}
+.textarea-p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 320px;
+  height: 176px;
+  left: 10%;
+  top: 315px;
+  padding: 15px 0px 10px 0px;
+
+  border-bottom: solid 1px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  background: transparent;
+  color: white;
+}
+
+.footer-link {
+  position: fixed;
+  left: 0;
+  bottom: 1%;
+  font-size: 20px;
+  color: rgb(88, 88, 88);
+
+  z-index: 10;
+  font-family: px sans-serif;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link .link {
+  color: white;
+}
+
+.grid {
+  display: flex;
+  align-items: flex-start;
+  /* background-color: red; */
+  height: 100vh;
+}
+
+.gr {
+  
+  width: 20%;
+  height: 100%;
+  overflow: scroll;
+  /* background-color: blue; */
+
+}
+
+#div1 {
+  height: 100%;
+
+  position: relative;
+  top: 30%;
+
+  font-size: 2vh;
+  left: 5%;
+  font-family: "LeferiPoint-SpecialItalicA";
+
+  z-index: 5;
+  background-color: #f1c30b;
+
+  /* background-color: blue; */
+}
+
+#div2 {
+  height: 100%;
+
+  position: relative;
+  top: 50%;
+
+  font-size: 2vh;
+
+
+  font-family: "NeoDunggeunmo";
+
+  background-color: #cc0044;
+
+  /* background-color: blue; */
+}
+#div3 {
+  height: 100%;
+
+  position: relative;
+  top: 44%;
+
+  font-size: 2vh;
+
+
+  white-space: nowrap;
+  font-family: "Chosunilbo_myungjo";
+
+  /* background-color: blue; */
+  background-color: #00995c;
+}
+#div4 {
+  height: 100%;
+
+  position: relative;
+  top: 70%;
+
+  font-size: 2vh;
+
+  font-family: "Pretendard-Regular";
+
+  white-space: nowrap;
+  overflow-y: none;
+  /* background-color: blue; */
+  background-color: #e65c00;
+}
+#div5 {
+  height: 100%;
+
+  position: relative;
+  top: 80%;
+  font-size: 2vh;
+
+
+  font-family: "MonoplexKR-Regular";
+
+  white-space: nowrap;
+  overflow-y: none;
+  /* background-color: blue; */
+  background-color: #999998;
+}
+
+::-webkit-scrollbar {
+  width: 1.5em;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border: solid rgb(255, 255, 255) 2px;
+  /* border-radius: 20px; */
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(179, 179, 179);
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Edit Remove HTML Table Row</title>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .container {
+        overflow: hidden;
+      }
+      .tab {
+        float: left;
+      }
+      .tab-2 {
+        margin: 5%;
+      }
+      .tab-2 input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        background-color: white;
+        display: block;
+        margin-bottom: 10%;
+      }
+      tr {
+        transition: all 0.25s ease-in-out;
+      }
+      tr:hover {
+        background-color: #eee;
+        cursor: pointer;
+      }
+      .h {
+        font-size: 1em;
+        text-align: center;
+      }
+      .M {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab tab-1">
+        <table id="table4" border="1">
+          <tr class="h">
+            <th>Your Name</th>
+            <th>Type for me!</th>
+          </tr>
+          <tr class="M">
+            <td>이름</td>
+            <td>메시지</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tab tab-2">
+        Your Name :<input
+          type="text"
+          name="fname4"
+          id="fname4"
+          value="혹은 닉네임"
+        />
+        Message :<input
+          type="text"
+          name="lname4"
+          id="lname4"
+          value="하고 싶은 이야기"
+        />
+
+        <button onclick="addHtmlTableRow4();">Add</button>
+        <button onclick="editHtmlTbleSelectedRow4();">Edit</button>
+        <button onclick="removeSelectedRow4();">Remove</button>
+      </div>
+    </div>
+
+    <script>
+      var rIndex4,
+        table4 = document.getElementById("table4");
+
+      // check the empty input
+      function checkEmptyInput4() {
+        var isEmpty4 = false,
+          fname4 = document.getElementById("fname4").value,
+          lname4 = document.getElementById("lname4").value;
+
+        // if(fname === ""){
+        //     alert("First Name Connot Be Empty");
+        //     isEmpty = true;
+        // }
+        // else if(lname === ""){
+        //     alert("Last Name Connot Be Empty");
+        //     isEmpty = true;
+        // }
+
+        // return isEmpty;
+      }
+
+      // add Row
+      function addHtmlTableRow4() {
+        if (!checkEmptyInput4()) {
+          var newRow = table4.insertRow(table4.length),
+            cell1 = newRow.insertCell(0),
+            cell2 = newRow.insertCell(1),
+            fname4 = document.getElementById("fname4").value,
+            lname4 = document.getElementById("lname4").value;
+
+          cell1.innerHTML = fname4;
+          cell2.innerHTML = lname4;
+          // call the function to set the event to the new row
+          selectedRowToInput4();
+        }
+      }
+
+      // display selected row data into input text
+      function selectedRowToInput4() {
+        for (var i = 1; i < table4.rows.length; i++) {
+          table4.rows[i].onclick = function () {
+            // get the seected row index
+            rIndex4 = this.rowIndex;
+            document.getElementById("fname4").value = this.cells[0].innerHTML;
+            document.getElementById("lname4").value = this.cells[1].innerHTML;
+          };
+        }
+      }
+      selectedRowToInput4();
+
+      function editHtmlTbleSelectedRow4() {
+        var fname4 = document.getElementById("fname4").value,
+          lname4 = document.getElementById("lname4").value;
+        if (!checkEmptyInput4()) {
+          table4.rows[rIndex4].cells[0].innerHTML = fname4;
+          table4.rows[rIndex4].cells[1].innerHTML = lname4;
+        }
+      }
+
+      function removeSelectedRow4() {
+        table4.deleteRow(rIndex4);
+        // clear input text
+        document.getElementById("fname4").value = "";
+        document.getElementById("lname4").value = "";
+      }
+      localStorage.setItem(fname4, lname4);
+
+    </script>
+  </body>
+</html>

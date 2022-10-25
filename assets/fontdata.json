@@ -1,0 +1,118 @@
+[
+    {
+       "tag":"Colorful",
+       "font":"Shadows"
+    },
+    {
+        "tag":"Colorful",
+        "font":"lobster"
+     },
+
+
+
+    {
+       "tag":"Antique",
+       "font":"branche"
+    },
+    {
+        "tag":"Antique",
+        "font":"homenaje"
+     },
+
+
+    {
+       "tag":"Demansional",
+       "font":"morena"
+
+    },
+    {
+        "tag":"Demansional",
+        "font":"speck"
+ 
+     },
+
+
+    {
+       "tag":"High-end",
+       "font":"cenotaph"
+
+    },
+    {
+        "tag":"High-end",
+        "font":"lovelyn"
+ 
+     },
+     {
+        "tag":"High-end",
+        "font":"deluce"
+ 
+     },
+     {
+        "tag":"High-end",
+        "font":"irina"
+ 
+     },
+
+
+    {
+        "tag":"Romantic",
+        "font":"harley"
+     },
+     {
+        "tag":"Romantic",
+        "font":"machineat"
+     },
+     {
+        "tag":"Romantic",
+        "font":"puzzled"
+     },
+
+
+     {
+        "tag":"Gloomy",
+        "font":"saddie"
+     },
+
+
+     {
+        "tag":"Modern",
+        "font":"Poppins"
+     },
+     
+     {
+        "tag":"Modern",
+        "font":"Raleway"
+     },
+
+
+     {
+        "tag":"Plain",
+        "font":"kenfolg"
+     },
+     {
+        "tag":"Plain",
+        "font":"garibaldi"
+     },
+
+     {
+        "tag":"Plain",
+        "font":"paulslab"
+     },
+
+
+
+     {
+        "tag":"Lonely",
+        "font":"modular"
+     },
+     {
+        "tag":"Lonely",
+        "font":"prestage"
+     },
+
+
+     {
+        "tag":"Mario game",
+        "font":"current"
+     }
+ ]

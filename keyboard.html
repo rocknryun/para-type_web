@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link href="./css/search.css" rel="stylesheet" />
+    <link href="./css/font_load.css" rel="stylesheet" />
+
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.sound.min.js"></script>
+    <script src="lib/keyboard.js"></script>
+    <script src="lib/paper-full.js"></script>
+    <script src="assets/image-category.ipynb"></script>
+  </head>
+
+  <body>
+    <!-- <span class="title">Search</span> -->
+
+    <a class="cancel-content" href="index.html">X</a>
+    <script>
+      // alert("\n Please Import your Image !\n 이미지를 업로드 해주세요 !");
+    </script>
+
+    <span>
+      <a class="back-content" href="index.html">Back</a>
+      <a class="done-content" href="font.html">Done</a>
+    </span>
+    <form class="file" id="file">
+      <input id="default-btn" type="file" hidden />
+      <button onclick="defaultBtnActive()" id="custom-btn">Upload</button>
+    </form>
+
+    <script>
+      const file = document.getElementById("file");
+      const imageData = document.getElementById("default-btn");
+  
+      file.addEventListener("submit", (e) => {
+        e.preventDefault();
+  
+        const endpoint = "image-category.py";
+        const formData = new FormData();
+  
+        console.log(imageData.files);
+  
+        formData.append("idefault-btn", imageData.files[0]);
+  
+        fetch(endpoint, {
+          method: "POST",
+          body: formData
+        }).catch(console.error);
+      });
+    </script>
+    
+
+    <div class="wrap">
+      <canvas id="canvas" resize></canvas>
+      <!-- <img src="" alt=""> -->
+      <img id="image" style="display: none" />
+      <input type="text" id="typeInput" value="이미지와 키워드를 넣어주세요" />
+      <!-- <button type="submit" class="submit-btn">Submit</button> -->
+
+      <span class="pp">Click HERE to Upload your Image</span>
+    </div>
+
+    <script>
+      function deleteDiv() {
+        const div = document.getElementById(".wrap-log p");
+
+        div.remove();
+      }
+    </script>
+
+    <div class="wrap-log"></div>
+    <script src="lib/raster.js"></script>
+
+    <footer class="footer-link">
+      Personal Project Design by
+      <a class="link" href="https://www.behance.net/jwjdgkfka4c9f"
+        >Haram Jeong</a
+      >
+    </footer>
+  </body>
+</html>

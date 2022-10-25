@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Edit Remove HTML Table Row</title>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .container {
+        overflow: hidden;
+        padding: 5%;
+        align-items: center;
+      }
+      .tab {
+        float: left;
+   
+      }
+
+      table{
+        border: 3px solid white;
+        border-collapse: collapse;
+      }
+      .tab-2 {
+        margin: 5%;
+      }
+      .tab-2 input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        background-color: white;
+        display: block;
+        margin-bottom: 10%;
+      }
+      th, td {
+        padding: 10px;
+      }
+      tr {
+        transition: all 0.25s ease-in-out;
+       
+
+      }
+      tr:hover {
+        background-color: #eee;
+        cursor: pointer;
+      }
+      .h {
+        font-size: 1em;
+        text-align: center;
+      }
+      .M {
+        text-align: center;
+      }
+
+      input {
+        padding: 5px;
+        font-weight: 500;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      button {
+        background-color: rgb(0, 0, 0);
+        width: 100px;
+        height: 1.5vw;
+        font-size: 1em;
+        font-family: "PP Neue Montreal";
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab tab-1">
+        <table id="table" border="1">
+          <tr class="h">
+            <th>Your Name</th>
+            <th>Type for me!</th>
+          </tr>
+          <tr class="M">
+            <td>이름</td>
+            <td>메시지</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tab tab-2">
+        Your Name :<input
+          type="text"
+          name="fname"
+          id="fname"
+          value="혹은 닉네임"
+        />
+        Message :<input
+          type="text"
+          name="lname"
+          id="lname"
+          value="하고 싶은 이야기"
+        />
+
+        <button onclick="addHtmlTableRow();">Add</button>
+        <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+        <button onclick="removeSelectedRow();">Remove</button>
+      </div>
+    </div>
+
+    <script>
+      var rIndex,
+        table = document.getElementById("table");
+
+      // check the empty input
+      function checkEmptyInput() {
+        var isEmpty = false,
+          fname = document.getElementById("fname").value,
+          lname = document.getElementById("lname").value;
+
+        // if(fname === ""){
+        //     alert("First Name Connot Be Empty");
+        //     isEmpty = true;
+        // }
+        // else if(lname === ""){
+        //     alert("Last Name Connot Be Empty");
+        //     isEmpty = true;
+        // }
+
+        // return isEmpty;
+      }
+
+      // add Row
+      function addHtmlTableRow() {
+        if (!checkEmptyInput()) {
+          var newRow = table.insertRow(table.length),
+            cell1 = newRow.insertCell(0),
+            cell2 = newRow.insertCell(1),
+            fname = document.getElementById("fname").value,
+            lname = document.getElementById("lname").value;
+
+          cell1.innerHTML = fname;
+          cell2.innerHTML = lname;
+          // call the function to set the event to the new row
+          selectedRowToInput();
+        }
+
+        localStorage.setItem(key, )
+      }
+
+      // display selected row data into input text
+      function selectedRowToInput() {
+        for (var i = 1; i < table.rows.length; i++) {
+          table.rows[i].onclick = function () {
+            // get the seected row index
+            rIndex = this.rowIndex;
+            document.getElementById("fname").value = this.cells[0].innerHTML;
+            document.getElementById("lname").value = this.cells[1].innerHTML;
+          };
+        }
+      }
+      selectedRowToInput();
+
+      function editHtmlTbleSelectedRow() {
+        var fname = document.getElementById("fname").value,
+          lname = document.getElementById("lname").value;
+        if (!checkEmptyInput()) {
+          table.rows[rIndex].cells[0].innerHTML = fname;
+          table.rows[rIndex].cells[1].innerHTML = lname;
+        }
+      }
+
+      function removeSelectedRow() {
+        table.deleteRow(rIndex);
+        // clear input text
+        document.getElementById("fname").value = "";
+        document.getElementById("lname").value = "";
+      }
+
+      localStorage.setItem(fname,lname);
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "PP Rader";
+  src: url("assets/fonts/PPRader-Regular.woff") format(woff);
+}
+@font-face {
+  font-family: "PP Editorial New";
+  src: url("assets/fonts/PPEditorialNew-Regular.woff") format(woff);
+}
+@font-face {
+  font-family: "PP NeueMontreal";
+  src: url("assets/fonts/PPNeueMontreal-Medium.woff") format(woff);
+}
+@font-face {
+  font-family: "PP Monument";
+  src: url("assets/fonts/PPMonumentExtended-Regular.woff") format(woff);
+}
+@font-face {
+  font-family: "PP Mondwest";
+  src: url("assets/fonts/PPMondwest-Regular.woff") format(woff);
+}
+@font-face {
+  font-family: "PP Eiko";
+  src: url("assets/fonts/PPEiko-Medium.woff") format(woff);
+}
+
+@font-face {
+  font-family: "HBIOS-SYS";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/HBIOS-SYS.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HSBombaram";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arita-buri-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LeferiPoint-SpecialItalicA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeoDunggeunmo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chosunilbo_myungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MonoplexKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Categorize */
+  
+  /* Colorful */
+  @font-face {
+    font-family: "Shadows";
+    src: url("assets/fonts/ShadowsIntoLight.woff") format(woff);
+  }
+    
+  @font-face {
+    font-family: "lobster";
+    src: url("assets/fonts/LobsterTwo-Regular.woff") format(woff);
+  }
+  
+  /* Antique */
+  @font-face {
+    font-family: "branche";
+    src: url("assets/fonts/BRANCHE.woff") format(woff);
+  }
+
+  @font-face {
+    font-family: "homenaje";
+    src: url("assets/fonts/Homenaje-Regular.woff") format(woff);
+  }
+  
+  /* Demansional */
+  @font-face {
+    font-family: "morena";
+    src: url("assets/fonts/Morena-Semibold.woff") format(woff);
+  }
+
+  @font-face {
+    font-family: "speck";
+    src: url("assets/fonts/Speck-Display.woff") format(woff);
+  }
+  
+  /* High-end */
+  @font-face {
+    font-family: "cenotaph";
+    src: url("assets/fonts/Cenotaph-Titling.woff") format(woff);
+  }
+ @font-face {
+    font-family: "lovelyn";
+    src: url("assets/fonts/Lovelyn.woff") format(woff);
+  }
+  @font-face {
+    font-family: "deluce";
+    src: url("assets/fonts/Deluce.woff") format(woff);
+  }
+  @font-face {
+    font-family: "irina";
+    src: url("assets/fonts/Irina.woff") format(woff);
+  }
+  /* Romantic */
+  @font-face {
+    font-family: "harley";
+    src: url("assets/fonts/BillieHarley.woff") format(woff);
+  }
+  @font-face {
+    font-family: "machineat";
+    src: url("assets/fonts/Machineat_Demo.woff") format(woff);
+  }
+  @font-face {
+    font-family: "puzzled";
+    src: url("assets/fonts/Puzzled_2.woff") format(woff);
+  }
+  
+  /* Gloomy */
+  @font-face {
+    font-family: "saddie";
+    src: url("assets/fonts/FontSaddiePog-Regular.woff") format(woff);
+  }
+  
+  /* Simple/Modern */ 
+    /* Poppins *00/
+     /* font-family: 'Poppins', sans-serif; */
+    /* Raleway *00/
+     /* font-family: 'Raleway', sans-serif; */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins&family=Raleway&display=swap');
+ 
+  /* Plain */
+  @font-face {
+    font-family: "kenfolg";
+    src: url("assets/fonts/Kenfolg.woff") format(woff);
+  }
+  @font-face {
+    font-family: "garibaldi";
+    src: url("assets/fonts/Garibaldi-Medium.woff") format(woff);
+  }
+  @font-face {
+    font-family: "paulslab";
+    src: url("assets/fonts/PaulSlab-Regular-Trail.woff") format(woff);
+  }
+  
+  /* Lonely */
+  @font-face {
+    font-family: "modular";
+    src: url("assets/fonts/MODULAR-14.woff") format(woff);
+  }
+  @font-face {
+    font-family: "prestage";
+    src: url("assets/fonts/Prestage.woff")format(woff);
+  }
+  
+  /* Mario game */
+  @font-face {
+    font-family: "current";
+    src: url("assets/fonts/Current-Regular.woff") format(woff);
+  }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Edit Remove HTML Table Row</title>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .container {
+        overflow: hidden;
+      }
+      .tab {
+        float: left;
+      }
+      .tab-2 {
+        margin: 5%;
+      }
+      .tab-2 input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        background-color: white;
+        display: block;
+        margin-bottom: 10%;
+      }
+      tr {
+        transition: all 0.25s ease-in-out;
+      }
+      tr:hover {
+        background-color: #eee;
+        cursor: pointer;
+      }
+      .h {
+        font-size: 1em;
+        text-align: center;
+      }
+      .M {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab tab-1">
+        <table id="table2" border="1">
+          <tr class="h">
+            <th>Your Name</th>
+            <th>Type for me!</th>
+          </tr>
+          <tr class="M">
+            <td>이름</td>
+            <td>메시지</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tab tab-2">
+        Your Name :<input
+          type="text"
+          name="fname2"
+          id="fname2"
+          value="혹은 닉네임"
+        />
+        Message :<input
+          type="text"
+          name="lname2"
+          id="lname2"
+          value="하고 싶은 이야기"
+        />
+
+        <button onclick="addHtmlTableRow2();">Add</button>
+        <button onclick="editHtmlTbleSelectedRow2();">Edit</button>
+        <button onclick="removeSelectedRow2();">Remove</button>
+      </div>
+    </div>
+
+    <script>
+      var rIndex2,
+        table2 = document.getElementById("table2");
+
+      // check the empty input
+      function checkEmptyInput2() {
+        var isEmpty2 = false,
+          fname2 = document.getElementById("fname2").value,
+          lname2 = document.getElementById("lname2").value;
+
+        // if(fname === ""){
+        //     alert("First Name Connot Be Empty");
+        //     isEmpty = true;
+        // }
+        // else if(lname === ""){
+        //     alert("Last Name Connot Be Empty");
+        //     isEmpty = true;
+        // }
+
+        // return isEmpty;
+      }
+
+      // add Row
+      function addHtmlTableRow2() {
+        if (!checkEmptyInput2()) {
+          var newRow = table2.insertRow(table2.length),
+            cell1 = newRow.insertCell(0),
+            cell2 = newRow.insertCell(1),
+            fname2 = document.getElementById("fname2").value,
+            lname2 = document.getElementById("lname2").value;
+
+          cell1.innerHTML = fname2;
+          cell2.innerHTML = lname2;
+          // call the function to set the event to the new row
+          selectedRowToInput2();
+        }
+      }
+
+      // display selected row data into input text
+      function selectedRowToInput2() {
+        for (var i = 1; i < table2.rows.length; i++) {
+          table2.rows[i].onclick = function () {
+            // get the seected row index
+            rIndex2 = this.rowIndex;
+            document.getElementById("fname2").value = this.cells[0].innerHTML;
+            document.getElementById("lname2").value = this.cells[1].innerHTML;
+          };
+        }
+      }
+      selectedRowToInput2();
+
+      function editHtmlTbleSelectedRow2() {
+        var fname2 = document.getElementById("fname2").value,
+          lname2 = document.getElementById("lname2").value;
+        if (!checkEmptyInput2()) {
+          table2.rows[rIndex2].cells[0].innerHTML = fname2;
+          table2.rows[rIndex2].cells[1].innerHTML = lname2;
+        }
+      }
+
+      function removeSelectedRow2() {
+        table2.deleteRow(rIndex2);
+        // clear input text
+        document.getElementById("fname2").value = "";
+        document.getElementById("lname2").value = "";
+      }
+
+      localStorage.setItem("lname2", lname2);
+      localStorage.setItem("fname2", fname2);
+
+
+    </script>
+  </body>
+</html>

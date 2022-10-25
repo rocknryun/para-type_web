@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-size: 0;
+}
+
+input {
+  border: none;
+  line-height: 40px;
+  position: absolute;
+  bottom: 10%;
+  width: 60%;
+  left: 20%;
+  background: none;
+  color: white;
+  font-size: 4vw;
+  font-family: sans-serif;
+  text-align: center;
+  border-bottom: 1.5px solid white;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:hover {
+  color: rgb(146, 146, 146);
+  mix-blend-mode: difference;
+}
+
+p {
+  position: fixed;
+  left: 0;
+  bottom: 7%;
+  font-size: 20px;
+  color: white;
+  opacity: 0.5;
+  z-index: 10;
+  font-family: px sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+canvas {
+  background: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+.back-content {
+  position: absolute;
+  width: 298px;
+  height: 140px;
+  left: 1%;
+  bottom: 0;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 140px;
+
+  color: white;
+
+  /* identical to box height */
+
+  text-decoration: underline solid white 4px;
+}
+
+.try-content {
+  display: flex;
+  align-items: right;
+  position: absolute;
+  width: 149px;
+  height: 140px;
+  right: 17%;
+  bottom: 0;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 140px;
+  /* identical to box height */
+
+  text-decoration: underline solid white 4px;
+
+  color: #ffffff;
+}
+.info-content {
+  display: flex;
+  align-items: right;
+  position: absolute;
+  width: 180px;
+  height: 140px;
+  right: 2%;
+  bottom: 10%;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 140px;
+  /* identical to box height */
+
+  text-decoration: underline solid white 4px;
+
+  color: #ffffff;
+}
+
+.footer-link {
+  position: fixed;
+  left: 0;
+  bottom: 1%;
+  font-size: 20px;
+  color: rgb(88, 88, 8);
+
+  z-index: 10;
+  font-family: px sans-serif;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link {
+  position: fixed;
+  left: 0;
+  bottom: 1%;
+  font-size: 20px;
+  color: rgb(88, 88, 88);
+
+  z-index: 10;
+  font-family: px sans-serif;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link .link {
+  color: white;
+}
+
+.cancel-content {
+  position: absolute;
+  width: 52px;
+  height: 148px;
+  right: 1%;
+  top: 0;
+  z-index: 10;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 116.688px;
+  line-height: 140px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.dropdown {
+ box-sizing: border-box;
+ z-index: 10;
+ background-color: red;
+}
+/* 
+.select {
+  background: white;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #2a2f3b solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+ z-index: 10;
+
+}
+
+#scene {
+  z-index: -5;
+} */

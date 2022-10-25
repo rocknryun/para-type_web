@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Para TYPE */
+.title {
+  position: absolute;
+  width: 853px;
+  height: 220px;
+  left: 1%;
+  top: 1%;
+  z-index: -1;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7vw;
+  line-height: 220px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.about-content {
+  position: absolute;
+  width: 298px;
+  height: 140px;
+  left: 1%;
+  bottom: 10%;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 140px;
+
+  color: #ffffff;
+
+  /* identical to box height */
+
+  text-decoration: underline solid white 4px;
+}
+
+.canvas-font {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  border: none;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  text-align: left;
+  font-size: 465px;
+  z-index: -1;
+}
+
+.feedback-content {
+  z-index: 10;
+
+  position: absolute;
+  width: 298px;
+  height: 140px;
+  left: 1%;
+  bottom: 0;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+
+  line-height: 140px;
+
+  color: white;
+
+  /* identical to box height */
+
+  text-decoration: underline solid white 4px;
+}
+
+.search-content input[type="file"] {
+  display: flex;
+  align-items: right;
+  position: absolute;
+  width: 352px;
+  height: 140px;
+  right: 1%;
+  bottom: 0;
+  background-color: transparent;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+
+  line-height: 140px;
+
+  text-decoration: underline solid white 4px;
+
+  color: #ffffff;
+  z-index: 9;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.search-content {
+  display: flex;
+  align-items: right;
+  position: absolute;
+  width: 352px;
+  height: 140px;
+  right: 2%;
+  bottom: 0;
+  background-color: transparent;
+
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 140px;
+
+  text-decoration: underline solid white 4px;
+
+  color: #ffffff;
+  z-index: 10;
+}
+
+.footer-link {
+  position: fixed;
+  left: 0;
+  bottom: 1%;
+  font-size: 20px;
+  color: rgb(88, 88, 88);
+
+  z-index: 10;
+  font-family: px sans-serif;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link .link {
+  color: white;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  margin: auto auto;
+  position: absolute;
+  text-align: center;
+}
+
+.wrap input {
+  margin-top: 40%;
+}
+
+.wrap-log {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.wrap-log p {
+  margin: 10px;
+  font-family: "PP Neue Montreal";
+  font-size: 36pt;
+  z-index: 1;
+}
+
+/* #canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+} */
+
+.custom-btn {
+  z-index: 1;
+}
+
+.grid {
+  display: flex;
+  align-items: flex-start;
+  /* background-color: red; */
+  height: 100vh;
+}
+
+.gr {
+  width: 20% 20%;
+  height: 75%;
+  white-space: nowrap;
+  overflow: scroll;
+  /* background-color: blue; */
+}
+
+.g1 {
+  height: 100%;
+
+  position: relative;
+  top: 40%;
+
+  font-size: 40vh;
+  left: 5%;
+  white-space: nowrap;
+  font-family: "PP Eiko";
+  z-index: 5;
+
+  /* background-color: blue; */
+}
+.g2 {
+  height: 100%;
+
+  position: relative;
+  top: 47%;
+
+  font-size: 47vh;
+
+  white-space: nowrap;
+  font-family: "PP Mondwest";
+
+  /* background-color: blue; */
+}
+.g3 {
+  height: 100%;
+
+  position: relative;
+  top: 44%;
+
+
+  font-size: 43vh;
+
+  white-space: nowrap;
+  font-family: "PP Editorial New";
+  /* background-color: blue; */
+}
+.g4 {
+  height: 100%;
+
+  position: relative;
+  top: 70%;
+
+
+  font-size: 47vh;
+
+  font-family: "PP Rader";
+
+  white-space: nowrap;
+  overflow-y: none;
+  /* background-color: blue; */
+}
+.g5 {
+  position: relative;
+  right: 100%;
+  font-family: "PP Monument";
+  height: 100%;
+  top: 40%;
+
+
+  font-size: 47vh;
+
+  white-space: nowrap;
+
+  /* background-color: blue; */
+}
+
+::-webkit-scrollbar {
+  width: 1.5em;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border: solid rgb(255, 255, 255) 2px;
+  /* border-radius: 20px; */
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(179, 179, 179);
+}
