@@ -108,7 +108,7 @@
   /* Demansional */
   @font-face {
     font-family: "morena";
-    src: url("assets/fonts/Morena-Semibold.woff") format(woff);
+    src: url("public/fonts/Morena-Semibold.woff") format(woff);
   }
 
   @font-face {

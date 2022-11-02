@@ -20,12 +20,21 @@
         <div class="caret"></div>
       </div>
       <ul class="menu">
-        <li class="active">Font Name</li>
-        <li>font name</li>
-        <li>font name</li>
+        <li class="active">Spo sans</li>
       </ul>
     </div>
-
+    <div>
+      <div class="Message">
+        <ul>
+          <li>
+            <p class="onbo">
+              입력창에 원하는 단어를 입력해 주세요.
+            </p>
+          </li>     
+    
+        </ul>
+        
+      </div>
     <!-- <form action="">
       <h1>폰트를 선택해주세요 !</h1>
       <div class="dropdown">
@@ -78,7 +87,7 @@
     </span>
 
     <canvas id="scene"></canvas>
-    <input type="text" id="copy" value="Fontname" />
+    <input type="text" id="copy" value="Spo sans" />
     <p>Click to Change the Word</p>
 
     <script>
@@ -90,12 +99,13 @@
         radius = 1;
 
       var colors = [
-        "#e6b800",
-        "#cc0044",
-        "#d94099",
-        "#e65c00",
-        "#999998",
-        "#00995c",
+        // "#e6b800",
+        // "#cc0044",
+        // "#d94099",
+        // "#e65c00",
+        // "#999998",
+        // "#00995c",
+        "white"
       ];
 
       var copy = document.querySelector("#copy");
@@ -170,7 +180,7 @@
         wh = canvas.height = window.innerHeight;
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.font = "bold " + ww / 6 + "px sans-serif";
+        ctx.font = "bold " + ww / 8 + "px sans-serif";
         ctx.textAlign = "center";
         ctx.fillText(copy.value, ww / 2, wh / 2);
 
